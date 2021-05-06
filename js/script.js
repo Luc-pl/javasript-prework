@@ -1,3 +1,5 @@
+// Odczytywanie ruchu komputera
+
 let randomFraction = Math.random();
 
 printMessage('Wylosowany ułamek to: ' + randomFraction);
@@ -30,6 +32,8 @@ if(randomNumber == 3){
 
 printMessage('Mój ruch to: ' + computerMove);
 
+//Odpowiedź gracza
+
 let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
 
 console.log('Gracz wpisał: ' + playerInput);
@@ -49,3 +53,57 @@ if(playerInput == '3'){
 }
 
 printMessage('Twój ruch to: ' + playerMove);
+
+// Wynik gry
+
+if( computerMove == 'kamień' && playerMove == 'papier') {
+    printMessage('Ty wygrywasz')
+}
+
+if( computerMove == 'papier' && playerMove == 'nożyce') {
+    printMessage('Ty wygrywasz')
+}
+
+if( computerMove == 'nożyce' && playerMove == 'kamień') {
+    printMessage('Ty wygrywasz')
+}
+
+if( computerMove == 'papier' && playerMove == 'kamień') {
+    printMessage('Przegrywasz')
+}
+
+if( computerMove == 'nożyce' && playerMove == 'papier') {
+    printMessage('Przegrywasz')
+}
+
+if( computerMove == 'kamień' && playerMove == 'nożyce') {
+    printMessage('Przegrywasz')
+}
+
+// Remis
+
+if( computerMove == 'papier' && playerMove == 'papier') {
+    printMessage('Remis')
+}
+
+if( computerMove == 'nożyce' && playerMove == 'nożyce') {
+    printMessage('Remis')
+}
+
+if( computerMove == 'kamień' && playerMove == 'kamień') {
+    printMessage('Remis')
+}
+
+// Nieznany ruch
+
+if( computerMove == 'papier' && playerMove == 'nieznany ruch') {
+    printMessage('Wybierz poprawny numer ruchu')
+}
+
+if( computerMove == 'nożyce' && playerMove == 'nieznany ruch') {
+    printMessage('Wybierz poprawny numer ruchu')
+}
+
+if( computerMove == 'kamień' && playerMove == 'nieznany ruch') {
+    printMessage('Wybierz poprawny numer ruchu')
+}
