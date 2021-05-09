@@ -30,12 +30,14 @@
     
         if((argComputerMove == 'kamień' && argPlayerMove == 'papier') || (argComputerMove == 'papier' && argPlayerMove == 'nożyce') || (argComputerMove == 'nożyce' && argPlayerMove == 'kamień')) {
         printMessage('Ty wygrywasz!');
+        printMessage('X');
         } 
         else if(argComputerMove == argPlayerMove) {
         printMessage('Remis');  
         }
         else {
         printMessage('Tym razem przegrywasz :(');
+        printMessage('Y');
         }
     }
 
