@@ -50,12 +50,16 @@ header h1 {
 
 }
 
-.game-buttons #messages {
+.game-buttons .m-box {
     font-family: $font-one;
     color: #ff6b6b;
     font-size: 45px;
     text-align: center;
     letter-spacing: 1px;
     font-weight: bolder;
+    background-color: $color-two;
+    padding: 20px 0 20px 0;
+    margin: 0 100px;
+    border-radius: 25px;
 }
 
